@@ -1,0 +1,93 @@
+.about-page {
+  display: flex;
+  flex-direction: row;
+  height: 35rem;
+  position: relative;
+  justify-content: space-around;
+}
+.about-content {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 35rem;
+  width: 100%;
+}
+.content {
+  position: relative;
+  height: 27rem;
+  width: 32%;
+  border: 1px solid rgb(14, 156, 166);
+  background-image: url("../images/background-image.jpg");
+  border-radius: 22px;
+  opacity: 0.4;
+  padding: 1rem;
+}
+.para {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(6, 96, 103);
+}
+.sections {
+  position: relative;
+  height: 27rem;
+  width: 50%;
+  border: 1px solid rgb(14, 156, 166);
+}
+.title {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(14, 156, 166);
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.latter {
+  color: rgb(255, 210, 128);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container-two {
+  height: 6rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.box {
+  height: 4rem;
+  width: 10rem;
+  text-decoration: none;
+  border: 1px solid rgb(14, 156, 166);
+  color: rgb(14, 156, 166);
+  background-image: url("../images/background-image.jpg");
+}
+.box-click {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  color: rgb(14, 156, 166);
+  border: 1px solid rgb(14, 156, 166);
+  background-image: url("../images/background-image.jpg");
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 0.9rem;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgb(14, 156, 166);
+  padding: 2.9rem;
+  font-size: 30px;
+  text-align: center;
+}
+.change-color {
+  background-color: rgb(176, 176, 255);
+}
+.other-color {
+  background-color: rgb(252, 132, 186);
+}

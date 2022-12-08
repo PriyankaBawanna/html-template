@@ -1,0 +1,114 @@
+.header {
+  height: 3rem;
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.intro {
+  position: relative;
+  width: 15rem;
+  height: inherit;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  display: block;
+  position: relative;
+}
+.name-title {
+  display: block;
+  position: relative;
+  animation: title-name 15s linear infinite;
+}
+.name-title h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.menu {
+  position: relative;
+  width: 40rem;
+  height: inherit;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.arrow {
+  display: none;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  height: 10rem;
+  width: 8rem;
+  margin-left: -2rem;
+  padding: 0.5rem;
+  background-color: white;
+  z-index: 1;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+}
+.dropdown span {
+  color: rgb(0, 85, 128);
+  font-size: 1.2rem;
+  font-style: bold;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown:hover .arrow {
+  display: block;
+}
+.hamburger {
+  display: none;
+}
+.link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-style: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 85, 128);
+  padding: 0.5rem;
+}
+.link:hover {
+  color: rgb(134, 75, 123);
+
+  border-radius: 12px;
+  background-color: rgb(212, 235, 247);
+}
+
+@keyframes title-name {
+  0% {
+    color: red;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: rgb(255, 0, 208);
+  }
+  100% {
+    color: rgb(0, 85, 128);
+  }
+}
+@media (max-width: 1026px) {
+  .menu {
+    display: none;
+  }
+  .name-title {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
